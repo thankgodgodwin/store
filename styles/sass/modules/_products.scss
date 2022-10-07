@@ -1,0 +1,60 @@
+.products{
+    padding: 8rem 2rem;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.438)) ,url(./../../../images/pexels-vilnis-husko-8349866.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    &__content{
+        display: flex;
+        justify-content: space-around;
+          
+        @include phone {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+} 
+.product{
+    width: 25%;
+    box-shadow: 2px 2px 4px #000;
+
+    @include phone {
+        width: 80%;
+        margin: 1rem 0;
+    }
+s
+    &__img--container{
+        width: 100%;
+        height: 12rem;
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__text{
+        padding: 1rem 1rem 4rem 1rem;
+        background-color: #fff;
+        position: relative;
+    }
+
+
+    &__author{
+        font-size: .7rem;
+        margin-top: .4rem;
+        margin-bottom: 1.2rem;
+    }
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__price{
+        font-weight: bold;
+    }
+    &__icon{
+        color: orangered;
+    }
+
+}  

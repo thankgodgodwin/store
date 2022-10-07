@@ -1,0 +1,52 @@
+.email{
+    padding: 8rem 0;
+    // background-color: #999;
+
+    &__content{
+        width: 70%;
+        background-color: #777;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+        box-shadow: 2px 2px 4px #000;
+        border-radius: 5px;
+        
+        @include phone {
+            padding: 2rem 0;
+        }
+
+        &--info{
+            width: 70%;
+            background-color: #fff;
+            padding: 4rem 2rem;
+            margin: 0 auto;
+            // box-shadow: 2px 2px 4px #000;
+            border-radius: 5px;
+
+            @include phone {
+                padding: 2rem 1rem;
+            }
+        }
+    } 
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+    }
+    &__input{
+        margin-bottom: 1.2rem;
+        padding: .8rem 1rem;
+        // box-shadow: 2px 2px 4px #000;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+
+        @include phone {
+            padding: .8rem ;
+        }
+    }
+
+
+    
+}

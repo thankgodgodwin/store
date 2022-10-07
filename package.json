@@ -1,0 +1,15 @@
+{
+  "name": "online-store",
+  "version": "1.0.0",
+  "description": "online-store",
+  "main": "index.js",
+  "scripts": {
+    "compiler": "node-sass styles/sass/style.scss  styles/style.css -w",
+    "prefix": "postcss styles/style.css input.css -u postcss-prefixer -o styles/output.css"
+  },
+  "author": "ThankGod Godwin",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
